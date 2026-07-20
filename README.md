@@ -37,5 +37,6 @@ If I adjust it less to 10%, we only got 2 pts.
 <img width="1913" height="1057" alt="06" src="https://github.com/user-attachments/assets/d6614d04-adbd-48a5-8231-9405e8d818ca" />
 <img width="1293" height="721" alt="07" src="https://github.com/user-attachments/assets/acfc8cc0-8378-4061-88cd-b508d7e4998e" />
 
-
+# That's it
+Will share the source code here (I don't even know what that's mean lol), bye.
 
