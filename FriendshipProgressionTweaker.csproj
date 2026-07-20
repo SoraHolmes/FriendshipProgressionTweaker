@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	<Gamepath>C:\Games\Stardew Valley\Stardew Valley</Gamepath>
+	<EnableHarmony>true</EnableHarmony>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="4.4.0" />
+	  
+    <Reference Include="GenericModConfigMenu">
+      <HintPath>..\..\..\Mods\GenericModConfigMenu\GenericModConfigMenu.dll</HintPath>
+    </Reference>
+	  
+	<Reference Include="Stardew Valley">
+		<HintPath>C:\Games\Stardew Valley\Stardew Valley\Stardew Valley.dll</HintPath>
+	</Reference>
+
+	<Reference Include="StardewModdingAPI">
+		<HintPath>C:\Games\Stardew Valley\Stardew Valley\StardewModdingAPI.dll</HintPath>
+	</Reference>
+
+  </ItemGroup>
+
+</Project>

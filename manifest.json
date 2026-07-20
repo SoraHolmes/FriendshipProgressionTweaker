@@ -1,0 +1,17 @@
+{
+    "Name": "FriendshipProgressionTweaker",
+    "Author": "SoraHolmes",
+    "Version": "1.2.0",
+    "Description": "Adjust friendship progression from gifts, talking, quests, and events using customizable two-heart milestone percentages.",
+    "UniqueID": "SoraHolmes.FriendshipProgressionTweaker",
+    "EntryDll": "FriendshipProgressionTweaker.dll",
+    "MinimumApiVersion": "4.5.0",
+    "UpdateKeys": [],
+
+    "Dependencies": [
+        {
+            "UniqueID": "spacechase0.GenericModConfigMenu",
+            "IsRequired": false
+        }
+    ]
+}
