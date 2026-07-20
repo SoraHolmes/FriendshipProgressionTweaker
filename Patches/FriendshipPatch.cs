@@ -1,5 +1,6 @@
 ﻿using FriendshipProgressionTweaker.Core;
 using HarmonyLib;
+using StardewModdingAPI;
 using StardewValley;
 
 namespace FriendshipProgressionTweaker.Patches;
@@ -46,21 +47,28 @@ public static class FriendshipPatch
         NPC n
     )
     {
-        if (!ModEntry.Config.Enabled)
+        if (!Context.IsWorldReady)
             return;
 
+        if (!ModEntry.Config.Enabled)
+            return;
 
         if (amount <= 0)
             return;
 
-
-        if (FriendshipSourceTracker.Current == FriendshipSource.Other)
-            return;
-
-
         if (n == null)
             return;
 
+        ModEntry.Instance.Monitor.Log(
+            $"Friendship change: NPC={n.Name}, Amount={amount}, Source={FriendshipSourceTracker.Current}",
+            LogLevel.Debug
+        );
+
+        if (FriendshipSourceTracker.Current ==
+            FriendshipSource.Other)
+        {
+            return;
+        }
 
         amount =
             ModEntry.Scale(

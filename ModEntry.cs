@@ -14,8 +14,12 @@ public class ModEntry : Mod
 
     public static ModConfig Config = null!;
 
+    public static ModEntry Instance { get; private set; } = null!;
+
     public override void Entry(IModHelper helper)
     {
+        Instance = this;
+
         Config = helper.ReadConfig<ModConfig>();
 
         helper.Events.GameLoop.GameLaunched += OnGameLaunched;
@@ -342,13 +346,19 @@ public class ModEntry : Mod
         FriendshipSource source
     )
     {
-        if (!Game1.player.friendshipData.ContainsKey(npcName))
+        if (!Context.IsWorldReady)
             return 100;
 
+        if (Game1.player == null)
+            return 100;
 
-        var friendship =
-            Game1.player.friendshipData[npcName];
-
+        if (!Game1.player.friendshipData.TryGetValue(
+            npcName,
+            out var friendship
+        ))
+        {
+            return 100;
+        }
 
         int hearts =
             Math.Max(0, friendship.Points / 250);

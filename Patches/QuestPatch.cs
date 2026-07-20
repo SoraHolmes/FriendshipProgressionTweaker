@@ -14,25 +14,20 @@ public static class QuestPatch
                 "questComplete"
             );
 
-
         if (method == null)
-        {
             return;
-        }
-
 
         harmony.Patch(
             method,
 
-            postfix: new HarmonyMethod(
+            prefix: new HarmonyMethod(
                 typeof(QuestPatch),
-                nameof(Postfix)
+                nameof(Prefix)
             )
         );
     }
 
-
-    private static void Postfix()
+    private static void Prefix()
     {
         FriendshipSourceTracker.Set(
             FriendshipSource.Quest

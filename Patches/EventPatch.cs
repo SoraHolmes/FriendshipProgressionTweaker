@@ -14,23 +14,20 @@ public static class EventPatch
                 "setUp"
             );
 
-
         if (method == null)
             return;
-
 
         harmony.Patch(
             method,
 
-            postfix: new HarmonyMethod(
+            prefix: new HarmonyMethod(
                 typeof(EventPatch),
-                nameof(Postfix)
+                nameof(Prefix)
             )
         );
     }
 
-
-    private static void Postfix()
+    private static void Prefix()
     {
         FriendshipSourceTracker.Set(
             FriendshipSource.Event

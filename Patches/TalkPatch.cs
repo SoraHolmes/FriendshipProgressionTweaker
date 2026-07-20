@@ -14,29 +14,25 @@ public static class TalkPatch
                 "checkAction"
             );
 
-
         if (method == null)
             return;
-
 
         harmony.Patch(
             method,
 
-            postfix: new HarmonyMethod(
+            prefix: new HarmonyMethod(
                 typeof(TalkPatch),
-                nameof(Postfix)
+                nameof(Prefix)
             )
         );
     }
 
-
-    private static void Postfix(
+    private static void Prefix(
         NPC __instance
     )
     {
         if (__instance == null)
             return;
-
 
         FriendshipSourceTracker.Set(
             FriendshipSource.Talking

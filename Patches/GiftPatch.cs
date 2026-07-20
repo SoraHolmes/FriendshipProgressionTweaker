@@ -1,5 +1,6 @@
 ﻿using FriendshipProgressionTweaker.Core;
 using HarmonyLib;
+using StardewModdingAPI;
 using StardewValley;
 
 namespace FriendshipProgressionTweaker.Patches;
@@ -15,8 +16,9 @@ public static class GiftPatch
             );
 
         if (method == null)
+        {
             return;
-
+        }
 
         harmony.Patch(
             method,
@@ -36,6 +38,9 @@ public static class GiftPatch
 
     private static void Prefix()
     {
+        if (!Context.IsWorldReady)
+            return;
+
         FriendshipSourceTracker.Set(
             FriendshipSource.Gift
         );
