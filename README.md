@@ -28,9 +28,11 @@ Well thanks to this mod, [Lookup Anything](https://www.nexusmods.com/stardewvall
 # Example
 Take a "look" at Linus here, which already 2 hearts, meaning his progression already at the stage of 2-4 Hearts.
 <img width="1287" height="731" alt="03" src="https://github.com/user-attachments/assets/102f5492-9bd6-42dd-8c68-86ee7ef523c6" />
+
 If I am talking to him right now with this setup, we will only gain 16 pts from 80% instead the normal 20 pts 100%.
 <img width="1915" height="1053" alt="04" src="https://github.com/user-attachments/assets/faf1ed27-8b90-42fe-a176-33d624a68be5" />
 <img width="1283" height="711" alt="05-Cafter" src="https://github.com/user-attachments/assets/4d933829-bf9e-4f7c-83e0-d30eb50bfe15" />
+
 If I adjust it less to 10%, we only got 2 pts.
 <img width="1913" height="1057" alt="06" src="https://github.com/user-attachments/assets/d6614d04-adbd-48a5-8231-9405e8d818ca" />
 <img width="1293" height="721" alt="07" src="https://github.com/user-attachments/assets/acfc8cc0-8378-4061-88cd-b508d7e4998e" />
