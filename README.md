@@ -26,7 +26,7 @@ Yup, there is slider to adjust how much percentage for every 2 hearts. Maximum n
 Well thanks to this mod, [Lookup Anything](https://www.nexusmods.com/stardewvalley/mods/541) I could test it directly on NPC(Of course it's Linus) by pressing F2 to check their "Info" about their "pts" until the next Heart.
 
 # Example
-Take a "look" at Linus here, which already 2 hearts, that's meaning his progression already at the stage of 2-4 Hearts.
+Take a "look" at Linus here, which already 2 hearts, meaning his progression already at the stage of 2-4 Hearts.
 <img width="1287" height="731" alt="03" src="https://github.com/user-attachments/assets/102f5492-9bd6-42dd-8c68-86ee7ef523c6" />
 If I am talking to him right now with this setup, we will only gain 16 pts from 80% instead the normal 20 pts 100%.
 <img width="1915" height="1053" alt="04" src="https://github.com/user-attachments/assets/faf1ed27-8b90-42fe-a176-33d624a68be5" />
