@@ -16,3 +16,8 @@ Well...... as you can see. This is the Ui with the help of [Generic Mod Config M
 <img width="1917" height="1061" alt="01" src="https://github.com/user-attachments/assets/375b5828-b4e7-4b72-b1ee-7bfd540df352" />
 <img width="1913" height="1057" alt="02" src="https://github.com/user-attachments/assets/6f2fcdf8-cc83-4657-be38-646687d1c69b" />
 
+# Gift, Talk, Quest, Event
+All interaction above give you a certain points on friendship, with this mod, there's a progression for every 2 Hearts, that the points you gained will be reducedd at certain percentages. For example talking to someone at Hearts 0 - 2 will give you normal 20 points, after you reach Hearts 2 - 4, we will only gain 18 points. Gift and Talk is working as intended, but not yet tried for Quest or Eveny related points like dialogue friendship points (I hope it works lol).
+
+# Adjustable (Slider)
+Yup there is slider to adjust how much percentage for every 2 hearts. Maximum number is 200% which give you double the amount or 0% which give you nothing. Adjust however you want, again thanks to [Generic Mod Config Menu (GMCM)](https://www.nexusmods.com/stardewvalley/mods/5098).
