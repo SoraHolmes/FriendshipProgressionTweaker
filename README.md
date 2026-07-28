@@ -1,6 +1,61 @@
 # FriendshipProgressionTweaker
 First (and probably last) mod and/or repository for personal use that I "created" with the help of ChatGPT and inspired by [DifficultySocializing](https://www.nexusmods.com/stardewvalley/mods/24389?tab=posts) ([PokeBenji](https://www.nexusmods.com/profile/PokeBenji)).
 
+# Description
+
+FriendshipProgressionTweaker lets you customize how quickly friendship points are gained in Stardew Valley.
+
+Instead of using one multiplier for every friendship level, the mod allows you to set separate percentages for each two-heart range:
+
+- 0–2 hearts
+- 2–4 hearts
+- 4–6 hearts
+- 6–8 hearts
+- 8–10 hearts
+- 10–12 hearts
+- 12–14 hearts
+
+Separate scaling options are available for:
+
+- Gifts
+- Conversations
+- Quests
+- Events
+
+This makes it possible to slow friendship progression down gradually, keep the early stages more generous, or create your own progression balance.
+
+
+# Tested Features
+
+The following friendship sources have been tested in-game:
+
+- Regular conversations
+- Regular gifts
+- Birthday gifts
+- Help Wanted board item-delivery quests
+- Item-delivery quests received by letter
+- Weekly Special Orders
+
+Each tested source correctly uses its own configured category and the percentage for the NPC's current heart range.
+
+Event friendship scaling is included in the configuration, but has not yet been fully tested and should currently be considered experimental.
+
+# Installation instructions
+
+Install the latest version of [SMAPI](https://smapi.io).
+Install[Generic Mod Config Menu (GMCM)](https://www.nexusmods.com/stardewvalley/mods/5098) to configure the mod.
+(Optional) [Lookup Anything](https://www.nexusmods.com/stardewvalley/mods/541), press F2 on NPC to see if mod works as intended / fn+F1 on laptop
+(can be used to check an NPC's exact friendship points before and after an interaction because SMAPI shows Vanilla points)
+Unzip the mod folder into Stardew Valley/Mods.
+Run the game using [SMAPI](https://smapi.io).
+
+# Main features
+Gaining a Friendship Points via Milestone/Progression/Scaler per 2 Hearts with adjustable percentage from Gifting, Talking, Quest and Event (like dialogue choices or special days).
+
+# Requirements
+the latest version of SMAPI
+Generic Mod Config Menu
+
 # WHY?
 I don't know which head or tail about programming/coding, that's why, with the help of ChatGPT (yeah, I know) and inspired by a Mod called [DifficultySocializing](https://www.nexusmods.com/stardewvalley/mods/24389?tab=posts) by [PokeBenji](https://www.nexusmods.com/profile/PokeBenji), this mod could exist. Only beginning to play Stardew Valley, realizing that friendship points gained by gifting (more so on birthday and gold quality stuff), like way too much by my standard, raising it from 2 hearts to 5 hearts, just like that was already done within 2 weeks in Spring. Year 1. I'm thinking, "No, I thought this game had the definition of cozy, but that doesn't align with you, taking your time, that later on the NPC will just become a husk."
 
@@ -10,14 +65,11 @@ Searching mod on [Nexus Mods](https://www.nexusmods.com), trying to find with th
 # I tried
 So, that's why this mod was born from scratch with 0% skill on both programming and coding, never use Visual Studio or SMAPI, never use ChatGPT before, not good at English or making a statement, or using this GitHub website, I was desperate to make a Friendship Progression/Scaler Percentage every 2 Hearts Mods (MOUTHful).
 
-# The Feature
+# images
 Well...... as you can see. This is the UI with the help of [Generic Mod Config Menu (GMCM)](https://www.nexusmods.com/stardewvalley/mods/5098)
 <img width="1915" height="1055" alt="00" src="https://github.com/user-attachments/assets/80726ca1-0f10-4e73-8579-fc695e2a813c" />
 <img width="1917" height="1061" alt="01" src="https://github.com/user-attachments/assets/375b5828-b4e7-4b72-b1ee-7bfd540df352" />
 <img width="1913" height="1057" alt="02" src="https://github.com/user-attachments/assets/6f2fcdf8-cc83-4657-be38-646687d1c69b" />
-
-# Gift, Talk, Quest, Event
-All interaction above give you a certain points on friendship, with this mod, there's a progression for every 2 Hearts, that the points you gained will be reduced at certain percentages. For example talking to someone at Hearts 0 - 2 (100%) will give you normal 20 points, after you reach Hearts 2 - 4 (80%), we will only gain 16 points. Gift and Talk is working as intended, but not yet tried for Quest or Eveny related points like dialogue friendship points (I hope it works lol).
 
 # Adjustable (Slider)
 Yup, there is slider to adjust how much percentage for every 2 hearts. Maximum number is 200% which give you double the amount or 0% which give you nothing. Adjust however you want, again thanks to [Generic Mod Config Menu (GMCM)](https://www.nexusmods.com/stardewvalley/mods/5098).
@@ -36,6 +88,17 @@ If I am talking to him right now with this setup, we will only gain 16 pts from 
 If I adjust it less to 10%, we only got 2 pts.
 <img width="1913" height="1057" alt="06" src="https://github.com/user-attachments/assets/d6614d04-adbd-48a5-8231-9405e8d818ca" />
 <img width="1293" height="721" alt="07" src="https://github.com/user-attachments/assets/acfc8cc0-8378-4061-88cd-b508d7e4998e" />
+
+# Credits
+
+Original creator:
+- [SoraHolmes](https://www.nexusmods.com/profile/SoraHolmes)
+
+Additional development and testing:
+- [Mememerimo](https://www.nexusmods.com/profile/Mememerimo)
+
+Inspired by:
+- [PokeBenji](https://www.nexusmods.com/profile/PokeBenji)
 
 # That's it
 Will share the source code here (I don't even know what that's mean lol), bye.
