@@ -1,4 +1,4 @@
-﻿using FriendshipProgressionTweaker.Core;
+using FriendshipProgressionTweaker.Core;
 using HarmonyLib;
 using StardewModdingAPI;
 using StardewValley;
@@ -11,8 +11,8 @@ public static class GiftPatch
     {
         var method =
             AccessTools.Method(
-                typeof(Utility),
-                "modifyFriendshipForGift"
+                typeof(NPC),
+                "receiveGift"
             );
 
         if (method == null)

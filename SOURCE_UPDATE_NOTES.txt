@@ -1,0 +1,22 @@
+FriendshipProgressionTweaker 1.2.4 — source update notes
+
+Changed files:
+- ModEntry.cs: disables the old QuestPatch hook.
+- Patches/GiftPatch.cs: hooks NPC.receiveGift.
+- Patches/TalkPatch.cs: hooks NPC.grantConversationFriendship.
+- Patches/FriendshipPatch.cs: classifies tested 100–300 point delivery and Special Order rewards
+  arriving as Talking/Other as Quest before applying the configured multiplier.
+- manifest.json: version 1.2.4, Nexus update key, additional developer credit.
+- config.json: restored repository defaults (not Mememerimo's personal settings).
+
+Verified in-game with Lookup Anything and the SMAPI log:
+- conversation: 20 x 80% = 16;
+- loved gift: 80 x 45% = 36;
+- Help Wanted delivery quest: 150 x 40% = 60;
+- letter delivery quest: 255 x 40% = 102;
+- Special Order / weekly board reward: 250 x 40% = 100.
+
+Not yet verified:
+- heart-event friendship changes.
+
+The tested public DLL is supplied separately in the release archive.

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Games\\Stardew Valley\\Stardew Valley\\New folder\\Edit\\FriendshipProgressionTweaker\\FriendshipProgressionTweaker.csproj": {}
+    "C:\\Games\\Stardew Valley\\Stardew Valley\\New folder\\Edit\\Update\\FriendshipProgressionTweaker\\FriendshipProgressionTweaker.csproj": {}
   },
   "projects": {
-    "C:\\Games\\Stardew Valley\\Stardew Valley\\New folder\\Edit\\FriendshipProgressionTweaker\\FriendshipProgressionTweaker.csproj": {
+    "C:\\Games\\Stardew Valley\\Stardew Valley\\New folder\\Edit\\Update\\FriendshipProgressionTweaker\\FriendshipProgressionTweaker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Games\\Stardew Valley\\Stardew Valley\\New folder\\Edit\\FriendshipProgressionTweaker\\FriendshipProgressionTweaker.csproj",
+        "projectUniqueName": "C:\\Games\\Stardew Valley\\Stardew Valley\\New folder\\Edit\\Update\\FriendshipProgressionTweaker\\FriendshipProgressionTweaker.csproj",
         "projectName": "FriendshipProgressionTweaker",
-        "projectPath": "C:\\Games\\Stardew Valley\\Stardew Valley\\New folder\\Edit\\FriendshipProgressionTweaker\\FriendshipProgressionTweaker.csproj",
+        "projectPath": "C:\\Games\\Stardew Valley\\Stardew Valley\\New folder\\Edit\\Update\\FriendshipProgressionTweaker\\FriendshipProgressionTweaker.csproj",
         "packagesPath": "C:\\Users\\rival\\.nuget\\packages\\",
-        "outputPath": "C:\\Games\\Stardew Valley\\Stardew Valley\\New folder\\Edit\\FriendshipProgressionTweaker\\obj\\",
+        "outputPath": "C:\\Games\\Stardew Valley\\Stardew Valley\\New folder\\Edit\\Update\\FriendshipProgressionTweaker\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

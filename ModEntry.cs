@@ -1,4 +1,4 @@
-﻿using FriendshipProgressionTweaker.Core;
+using FriendshipProgressionTweaker.Core;
 using GenericModConfigMenu;
 using HarmonyLib;
 using Microsoft.Xna.Framework;
@@ -34,7 +34,8 @@ public class ModEntry : Mod
 
         Patches.TalkPatch.Apply(harmony);
         Patches.GiftPatch.Apply(harmony);
-        Patches.QuestPatch.Apply(harmony);
+        // QuestPatch is intentionally not applied.
+        // Tested delivery quests are classified safely in FriendshipPatch instead.
         Patches.EventPatch.Apply(harmony);
         Patches.FriendshipPatch.Apply(harmony);
 

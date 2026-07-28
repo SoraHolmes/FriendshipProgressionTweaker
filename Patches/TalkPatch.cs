@@ -1,4 +1,4 @@
-﻿using FriendshipProgressionTweaker.Core;
+using FriendshipProgressionTweaker.Core;
 using HarmonyLib;
 using StardewValley;
 
@@ -11,7 +11,7 @@ public static class TalkPatch
         var method =
             AccessTools.Method(
                 typeof(NPC),
-                "checkAction"
+                "grantConversationFriendship"
             );
 
         if (method == null)

@@ -1,4 +1,4 @@
-﻿using FriendshipProgressionTweaker.Core;
+using FriendshipProgressionTweaker.Core;
 using HarmonyLib;
 using StardewModdingAPI;
 using StardewValley;
@@ -59,13 +59,25 @@ public static class FriendshipPatch
         if (n == null)
             return;
 
+        FriendshipSource source = FriendshipSourceTracker.Current;
+
+        // In Stardew Valley 1.6, tested item-delivery quest rewards reach
+        // Farmer.changeFriendship as Talking or Other instead of Quest.
+        // Restrict the fallback to large positive gains so normal dialogue,
+        // gifts, and events keep their own source categories.
+        if (amount >= 100 && amount <= 300 &&
+            (source == FriendshipSource.Talking ||
+             source == FriendshipSource.Other))
+        {
+            source = FriendshipSource.Quest;
+        }
+
         ModEntry.Instance.Monitor.Log(
-            $"Friendship change: NPC={n.Name}, Amount={amount}, Source={FriendshipSourceTracker.Current}",
+            $"Friendship change: NPC={n.Name}, Amount={amount}, Source={source}",
             LogLevel.Debug
         );
 
-        if (FriendshipSourceTracker.Current ==
-            FriendshipSource.Other)
+        if (source == FriendshipSource.Other)
         {
             return;
         }
@@ -74,7 +86,7 @@ public static class FriendshipPatch
             ModEntry.Scale(
                 n.Name,
                 amount,
-                FriendshipSourceTracker.Current
+                source
             );
     }
 
