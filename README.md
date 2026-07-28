@@ -1,9 +1,9 @@
-# FriendshipProgressionTweaker
+# [FriendshipProgressionTweaker](https://www.nexusmods.com/stardewvalley/mods/49425)
 First (and probably last) mod and/or repository for personal use that I "created" with the help of ChatGPT and inspired by [DifficultySocializing](https://www.nexusmods.com/stardewvalley/mods/24389?tab=posts) ([PokeBenji](https://www.nexusmods.com/profile/PokeBenji)).
 
 # Description
 
-FriendshipProgressionTweaker lets you customize how quickly friendship points are gained in Stardew Valley.
+[FriendshipProgressionTweaker](https://www.nexusmods.com/stardewvalley/mods/49425) lets you customize how quickly friendship points are gained in Stardew Valley.
 
 Instead of using one multiplier for every friendship level, the mod allows you to set separate percentages for each two-heart range:
 
@@ -53,8 +53,8 @@ Run the game using [SMAPI](https://smapi.io).
 Gaining a Friendship Points via Milestone/Progression/Scaler per 2 Hearts with adjustable percentage from Gifting, Talking, Quest and Event (like dialogue choices or special days).
 
 # Requirements
-the latest version of SMAPI
-Generic Mod Config Menu
+The latest version of [SMAPI](https://smapi.io)
+[Generic Mod Config Menu (GMCM)](https://www.nexusmods.com/stardewvalley/mods/5098)
 
 # WHY?
 I don't know which head or tail about programming/coding, that's why, with the help of ChatGPT (yeah, I know) and inspired by a Mod called [DifficultySocializing](https://www.nexusmods.com/stardewvalley/mods/24389?tab=posts) by [PokeBenji](https://www.nexusmods.com/profile/PokeBenji), this mod could exist. Only beginning to play Stardew Valley, realizing that friendship points gained by gifting (more so on birthday and gold quality stuff), like way too much by my standard, raising it from 2 hearts to 5 hearts, just like that was already done within 2 weeks in Spring. Year 1. I'm thinking, "No, I thought this game had the definition of cozy, but that doesn't align with you, taking your time, that later on the NPC will just become a husk."
